@@ -1,0 +1,180 @@
+{
+  "header": {
+    "title": "Next.js Boilerplate",
+    "version": "v0.1.0"
+  },
+  "language": {
+    "english": "English",
+    "spanish": "Español",
+    "french": "Français"
+  },
+  "hero": {
+    "badge": "🚀 Boilerplate Listo para Producción",
+    "title": "Construye Más Rápido con",
+    "titleHighlight": "Next.js 15",
+    "description": "Un boilerplate completo full-stack con TypeScript, Prisma, autenticación Clerk, componentes shadcn/ui y herramientas de desarrollo modernas. Comienza a construir aplicaciones listas para producción en minutos.",
+    "getStarted": "Comenzar",
+    "viewDocs": "Ver Documentación",
+    "stats": {
+      "components": "15+ Componentes UI",
+      "languages": "3 Idiomas",
+      "typescript": "100% TypeScript",
+      "testing": "Jest y Cypress"
+    }
+  },
+  "features": {
+    "title": "Todo Lo Que Necesitas",
+    "subtitle": "Pre-configurado con herramientas estándar de la industria y mejores prácticas",
+    "nextjs": {
+      "title": "Next.js 15",
+      "description": "Último App Router con Turbopack para desarrollo ultrarrápido"
+    },
+    "typescript": {
+      "title": "TypeScript",
+      "description": "Seguridad completa de tipos con verificación estricta e IntelliSense"
+    },
+    "prisma": {
+      "title": "Prisma + PostgreSQL",
+      "description": "ORM de base de datos con tipos seguros y Accelerate para edge computing"
+    },
+    "clerk": {
+      "title": "Clerk Auth",
+      "description": "Solución completa de autenticación con logins sociales"
+    },
+    "shadcn": {
+      "title": "shadcn/ui",
+      "description": "Componentes hermosos y accesibles construidos en Radix UI"
+    },
+    "i18n": {
+      "title": "Internacionalización",
+      "description": "Soporte multiidioma con cambio del lado del cliente"
+    },
+    "cypress": {
+      "title": "Cypress E2E with Component Testing",
+      "description": "Cypress for end-to-end and component testing"
+    },
+    "jest": {
+      "title": "Jest Testing",
+      "description": "Jest + React Testing Library for unit testing"
+    }
+  },
+  "techStack": {
+    "title": "Stack Tecnológico Moderno",
+    "subtitle": "Construido con las últimas tecnologías y mejores prácticas"
+  },
+  "setup": {
+    "title": "Comienza en Minutos",
+    "subtitle": "Sigue estos simples pasos para lanzar tu proyecto",
+    "steps": {
+      "clone": {
+        "title": "Clonar e Instalar",
+        "description": "Obtén el boilerplate e instala las dependencias"
+      },
+      "env": {
+        "title": "Configurar Entorno",
+        "description": "Configura tus variables de entorno"
+      },
+      "database": {
+        "title": "Configurar Base de Datos",
+        "description": "Configura Prisma y PostgreSQL"
+      },
+      "dev": {
+        "title": "Iniciar Desarrollo",
+        "description": "Lanza tu servidor de desarrollo"
+      }
+    }
+  },
+  "components": {
+    "title": "Muestra de Componentes",
+    "subtitle": "Componentes hermosos y accesibles listos para usar",
+    "tabs": {
+      "ui": "Componentes UI",
+      "theme": "Sistema de Tema",
+      "testing": "Pruebas"
+    },
+    "ui": {
+      "button": {
+        "title": "Botón",
+        "description": "Múltiples variantes y tamaños"
+      },
+      "badge": {
+        "title": "Insignia",
+        "description": "Indicadores de estado y etiquetas"
+      },
+      "progress": {
+        "title": "Barras de Progreso",
+        "description": "Indicadores visuales de progreso"
+      }
+    },
+    "theme": {
+      "title": "Soporte de Tema",
+      "description": "Modo oscuro/claro automático con detección de preferencia del sistema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    },
+    "testing": {
+      "jest": {
+        "title": "Jest",
+        "description": "Pruebas unitarias con React Testing Library"
+      },
+      "cypress": {
+        "title": "Cypress",
+        "description": "Pruebas E2E y de componentes"
+      }
+    }
+  },
+  "workflow": {
+    "title": "Flujo de Desarrollo",
+    "subtitle": "Desarrollo optimizado con herramientas automatizadas",
+    "codeQuality": {
+      "title": "Calidad de Código",
+      "description": "ESLint + Prettier para formato consistente de código"
+    },
+    "git": {
+      "title": "Git Hooks",
+      "description": "Husky + Commitlint para commits convencionales"
+    },
+    "testing": {
+      "title": "Pruebas",
+      "description": "Jest para pruebas unitarias, Cypress para E2E"
+    },
+    "performance": {
+      "title": "Desarrollo Rápido",
+      "description": "Turbopack para builds ultrarrápidos"
+    }
+  },
+  "cta": {
+    "title": "¿Listo para Construir Algo Increíble?",
+    "description": "Comienza tu próximo proyecto con este boilerplate listo para producción y enfócate en lo que más importa - la lógica de tu aplicación.",
+    "clone": "Clonar Repositorio",
+    "source": "Ver Código Fuente"
+  },
+  "footer": {
+    "description": "Un boilerplate full-stack moderno para construir aplicaciones listas para producción.",
+    "copyright": "© 2025 Next.js Boilerplate. Construido con ❤️ usando tecnologías web modernas.",
+    "version": "v0.1.0",
+    "license": "Licencia MIT",
+    "links": {
+      "title": "Enlaces Rápidos",
+      "docs": "Documentación",
+      "github": "GitHub",
+      "issues": "Issues",
+      "contributing": "Contribuir"
+    },
+    "resources": {
+      "title": "Recursos",
+      "nextjs": "Docs de Next.js",
+      "prisma": "Docs de Prisma",
+      "clerk": "Docs de Clerk",
+      "shadcn": "shadcn/ui"
+    },
+    "community": {
+      "title": "Comunidad",
+      "discord": "Discord",
+      "twitter": "Twitter",
+      "blog": "Blog",
+      "newsletter": "Newsletter"
+    }
+  }
+}

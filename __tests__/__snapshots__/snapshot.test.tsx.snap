@@ -1,0 +1,1363 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`renders homepage unchanged 1`] = `
+<div>
+  <div
+    class="bg-background min-h-screen"
+  >
+    <header
+      class="bg-card border-b"
+    >
+      <div
+        class="container mx-auto flex items-center justify-between px-4 py-4"
+      >
+        <div
+          class="flex items-center space-x-2"
+        >
+          <svg
+            class="text-primary h-6 w-6"
+            fill="currentColor"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              Next.js
+            </title>
+            <path
+              d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"
+            />
+          </svg>
+          <h1
+            class="text-card-foreground text-xl font-bold"
+          >
+            Next.js Boilerplate
+          </h1>
+        </div>
+        <button
+          aria-label="Toggle theme"
+          class="focus-visible:ring-ring ring-offset-background hover:bg-accent hover:text-accent-foreground inline-flex h-10 w-10 items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-moon h-4 w-4"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <section
+      class="container mx-auto px-4 py-16 text-center"
+    >
+      <div
+        class="mx-auto max-w-4xl"
+      >
+        <span
+          class="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90 mb-4"
+          data-slot="badge"
+        >
+          Modern Full-Stack Boilerplate
+        </span>
+        <h1
+          class="text-foreground mb-6 text-4xl font-bold md:text-6xl"
+        >
+          Build Faster with
+          <span
+            class="text-primary"
+          >
+             Next.js 15
+          </span>
+        </h1>
+        <p
+          class="text-muted-foreground mx-auto mb-8 max-w-2xl text-xl"
+        >
+          A production-ready boilerplate with TypeScript, Prisma, Clerk authentication, shadcn/ui components, and Tailwind CSS. Start building your next project in minutes.
+        </p>
+        <div
+          class="flex flex-col justify-center gap-4 sm:flex-row"
+        >
+          <button
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-10 rounded-md has-[>svg]:px-4 px-8 text-lg"
+            data-slot="button"
+          >
+            Get Started
+          </button>
+          <button
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md has-[>svg]:px-4 px-8 text-lg"
+            data-slot="button"
+          >
+            View Documentation
+          </button>
+        </div>
+      </div>
+    </section>
+    <section
+      class="container mx-auto px-4 py-16"
+    >
+      <div
+        class="mb-12 text-center"
+      >
+        <h2
+          class="text-foreground mb-4 text-3xl font-bold"
+        >
+          Everything You Need
+        </h2>
+        <p
+          class="text-muted-foreground text-lg"
+        >
+          Pre-configured with industry-standard tools and best practices
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <div
+          class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm border-border"
+          data-slot="card"
+        >
+          <div
+            class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+            data-slot="card-header"
+          >
+            <div
+              class="flex items-center space-x-2"
+            >
+              <svg
+                class="text-primary h-5 w-5"
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  Next.js
+                </title>
+                <path
+                  d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"
+                />
+              </svg>
+              <div
+                class="leading-none font-semibold"
+                data-slot="card-title"
+              >
+                Next.js 15
+              </div>
+            </div>
+            <div
+              class="text-muted-foreground text-sm"
+              data-slot="card-description"
+            >
+              Latest App Router with Turbopack for lightning-fast development
+            </div>
+          </div>
+          <div
+            class="px-6"
+            data-slot="card-content"
+          >
+            <ul
+              class="text-muted-foreground space-y-2 text-sm"
+            >
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Server Components
+                </span>
+              </li>
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  App Router
+                </span>
+              </li>
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Turbopack
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm border-border"
+          data-slot="card"
+        >
+          <div
+            class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+            data-slot="card-header"
+          >
+            <div
+              class="flex items-center space-x-2"
+            >
+              <svg
+                class="text-primary h-5 w-5"
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  Prisma
+                </title>
+                <path
+                  d="M21.8068 18.2848L13.5528.7565c-.207-.4382-.639-.7273-1.1286-.7541-.5023-.0293-.9523.213-1.2062.6253L2.266 15.1271c-.2773.4518-.2718 1.0091.0158 1.4555l4.3759 6.7786c.2608.4046.7127.6388 1.1823.6388.1332 0 .267-.0188.3987-.0577l12.7019-3.7568c.3891-.1151.7072-.3904.8737-.7553s.1633-.7828-.0075-1.1454zm-1.8481.7519L9.1814 22.2242c-.3292.0975-.6448-.1873-.5756-.5194l3.8501-18.4386c.072-.3448.5486-.3996.699-.0803l7.1288 15.138c.1344.2856-.019.6224-.325.7128z"
+                />
+              </svg>
+              <div
+                class="leading-none font-semibold"
+                data-slot="card-title"
+              >
+                Prisma + PostgreSQL
+              </div>
+            </div>
+            <div
+              class="text-muted-foreground text-sm"
+              data-slot="card-description"
+            >
+              Type-safe database ORM with Accelerate for edge computing
+            </div>
+          </div>
+          <div
+            class="px-6"
+            data-slot="card-content"
+          >
+            <ul
+              class="text-muted-foreground space-y-2 text-sm"
+            >
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Type Safety
+                </span>
+              </li>
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Migrations
+                </span>
+              </li>
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Accelerate
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm border-border"
+          data-slot="card"
+        >
+          <div
+            class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+            data-slot="card-header"
+          >
+            <div
+              class="flex items-center space-x-2"
+            >
+              <svg
+                class="text-primary h-5 w-5"
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  Clerk
+                </title>
+                <path
+                  d="m21.47 20.829-2.881-2.881a.572.572 0 0 0-.7-.084 6.854 6.854 0 0 1-7.081 0 .576.576 0 0 0-.7.084l-2.881 2.881a.576.576 0 0 0-.103.69.57.57 0 0 0 .166.186 12 12 0 0 0 14.113 0 .58.58 0 0 0 .239-.423.576.576 0 0 0-.172-.453Zm.002-17.668-2.88 2.88a.569.569 0 0 1-.701.084A6.857 6.857 0 0 0 8.724 8.08a6.862 6.862 0 0 0-1.222 3.692 6.86 6.86 0 0 0 .978 3.764.573.573 0 0 1-.083.699l-2.881 2.88a.567.567 0 0 1-.864-.063A11.993 11.993 0 0 1 6.771 2.7a11.99 11.99 0 0 1 14.637-.405.566.566 0 0 1 .232.418.57.57 0 0 1-.168.448Zm-7.118 12.261a3.427 3.427 0 1 0 0-6.854 3.427 3.427 0 0 0 0 6.854Z"
+                />
+              </svg>
+              <div
+                class="leading-none font-semibold"
+                data-slot="card-title"
+              >
+                Clerk Auth
+              </div>
+            </div>
+            <div
+              class="text-muted-foreground text-sm"
+              data-slot="card-description"
+            >
+              Complete authentication solution with social logins and user management
+            </div>
+          </div>
+          <div
+            class="px-6"
+            data-slot="card-content"
+          >
+            <ul
+              class="text-muted-foreground space-y-2 text-sm"
+            >
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Social Logins
+                </span>
+              </li>
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  User Management
+                </span>
+              </li>
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Security
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm border-border"
+          data-slot="card"
+        >
+          <div
+            class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+            data-slot="card-header"
+          >
+            <div
+              class="flex items-center space-x-2"
+            >
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-palette text-primary h-5 w-5"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"
+                />
+                <circle
+                  cx="13.5"
+                  cy="6.5"
+                  fill="currentColor"
+                  r=".5"
+                />
+                <circle
+                  cx="17.5"
+                  cy="10.5"
+                  fill="currentColor"
+                  r=".5"
+                />
+                <circle
+                  cx="6.5"
+                  cy="12.5"
+                  fill="currentColor"
+                  r=".5"
+                />
+                <circle
+                  cx="8.5"
+                  cy="7.5"
+                  fill="currentColor"
+                  r=".5"
+                />
+              </svg>
+              <div
+                class="leading-none font-semibold"
+                data-slot="card-title"
+              >
+                shadcn/ui
+              </div>
+            </div>
+            <div
+              class="text-muted-foreground text-sm"
+              data-slot="card-description"
+            >
+              Beautiful, accessible components built on Radix UI primitives
+            </div>
+          </div>
+          <div
+            class="px-6"
+            data-slot="card-content"
+          >
+            <ul
+              class="text-muted-foreground space-y-2 text-sm"
+            >
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Accessible
+                </span>
+              </li>
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Customizable
+                </span>
+              </li>
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Theme-aware
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm border-border"
+          data-slot="card"
+        >
+          <div
+            class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+            data-slot="card-header"
+          >
+            <div
+              class="flex items-center space-x-2"
+            >
+              <svg
+                class="text-primary h-5 w-5"
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  TypeScript
+                </title>
+                <path
+                  d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"
+                />
+              </svg>
+              <div
+                class="leading-none font-semibold"
+                data-slot="card-title"
+              >
+                TypeScript
+              </div>
+            </div>
+            <div
+              class="text-muted-foreground text-sm"
+              data-slot="card-description"
+            >
+              Full TypeScript support with strict type checking and IntelliSense
+            </div>
+          </div>
+          <div
+            class="px-6"
+            data-slot="card-content"
+          >
+            <ul
+              class="text-muted-foreground space-y-2 text-sm"
+            >
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Type Safety
+                </span>
+              </li>
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  IntelliSense
+                </span>
+              </li>
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Refactoring
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm border-border"
+          data-slot="card"
+        >
+          <div
+            class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+            data-slot="card-header"
+          >
+            <div
+              class="flex items-center space-x-2"
+            >
+              <svg
+                class="text-primary h-5 w-5"
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>
+                  ESLint
+                </title>
+                <path
+                  d="M7.257 9.132L11.816 6.5a.369.369 0 0 1 .368 0l4.559 2.632a.369.369 0 0 1 .184.32v5.263a.37.37 0 0 1-.184.319l-4.559 2.632a.369.369 0 0 1-.368 0l-4.559-2.632a.369.369 0 0 1-.184-.32V9.452a.37.37 0 0 1 .184-.32M23.852 11.53l-5.446-9.475c-.198-.343-.564-.596-.96-.596H6.555c-.396 0-.762.253-.96.596L.149 11.509a1.127 1.127 0 0 0 0 1.117l5.447 9.398c.197.342.563.517.959.517h10.893c.395 0 .76-.17.959-.512l5.446-9.413a1.069 1.069 0 0 0 0-1.086m-4.51 4.556a.4.4 0 0 1-.204.338L12.2 20.426a.395.395 0 0 1-.392 0l-6.943-4.002a.4.4 0 0 1-.205-.338V8.08c0-.14.083-.269.204-.338L11.8 3.74c.12-.07.272-.07.392 0l6.943 4.003a.4.4 0 0 1 .206.338z"
+                />
+              </svg>
+              <div
+                class="leading-none font-semibold"
+                data-slot="card-title"
+              >
+                Developer Tools
+              </div>
+            </div>
+            <div
+              class="text-muted-foreground text-sm"
+              data-slot="card-description"
+            >
+              ESLint, Prettier, Husky, and Commitlint for code quality
+            </div>
+          </div>
+          <div
+            class="px-6"
+            data-slot="card-content"
+          >
+            <ul
+              class="text-muted-foreground space-y-2 text-sm"
+            >
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Code Quality
+                </span>
+              </li>
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Git Hooks
+                </span>
+              </li>
+              <li
+                class="flex items-center space-x-2"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-circle-check-big h-4 w-4 text-green-500"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.801 10A10 10 0 1 1 17 3.335"
+                  />
+                  <path
+                    d="m9 11 3 3L22 4"
+                  />
+                </svg>
+                <span>
+                  Conventional Commits
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="container mx-auto px-4 py-16"
+    >
+      <div
+        class="mb-12 text-center"
+      >
+        <h2
+          class="text-foreground mb-4 text-3xl font-bold"
+        >
+          See It In Action
+        </h2>
+        <p
+          class="text-muted-foreground text-lg"
+        >
+          Interactive components powered by the theme system
+        </p>
+      </div>
+      <div
+        class="mx-auto max-w-4xl"
+      >
+        <div
+          class="flex flex-col gap-2 w-full"
+          data-orientation="horizontal"
+          data-slot="tabs"
+          dir="ltr"
+        >
+          <div
+            aria-orientation="horizontal"
+            class="bg-muted text-muted-foreground h-9 items-center justify-center rounded-lg p-[3px] grid w-full grid-cols-3"
+            data-orientation="horizontal"
+            data-slot="tabs-list"
+            role="tablist"
+            style="outline: none;"
+            tabindex="0"
+          >
+            <button
+              aria-controls="radix-«r0»-content-components"
+              aria-selected="true"
+              class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              data-slot="tabs-trigger"
+              data-state="active"
+              id="radix-«r0»-trigger-components"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Components
+            </button>
+            <button
+              aria-controls="radix-«r0»-content-progress"
+              aria-selected="false"
+              class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              data-slot="tabs-trigger"
+              data-state="inactive"
+              id="radix-«r0»-trigger-progress"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Progress
+            </button>
+            <button
+              aria-controls="radix-«r0»-content-alerts"
+              aria-selected="false"
+              class="data-[state=active]:bg-background dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-md border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:shadow-sm [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+              data-orientation="horizontal"
+              data-radix-collection-item=""
+              data-slot="tabs-trigger"
+              data-state="inactive"
+              id="radix-«r0»-trigger-alerts"
+              role="tab"
+              tabindex="-1"
+              type="button"
+            >
+              Alerts
+            </button>
+          </div>
+          <div
+            aria-labelledby="radix-«r0»-trigger-components"
+            class="flex-1 outline-none space-y-6"
+            data-orientation="horizontal"
+            data-slot="tabs-content"
+            data-state="active"
+            id="radix-«r0»-content-components"
+            role="tabpanel"
+            style="animation-duration: 0s;"
+            tabindex="0"
+          >
+            <div
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm"
+              data-slot="card"
+            >
+              <div
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+                data-slot="card-header"
+              >
+                <div
+                  class="leading-none font-semibold"
+                  data-slot="card-title"
+                >
+                  Button Variants
+                </div>
+                <div
+                  class="text-muted-foreground text-sm"
+                  data-slot="card-description"
+                >
+                  Different button styles using theme colors
+                </div>
+              </div>
+              <div
+                class="px-6 flex flex-wrap gap-4"
+                data-slot="card-content"
+              >
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3"
+                  data-slot="button"
+                >
+                  Default
+                </button>
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80 h-9 px-4 py-2 has-[>svg]:px-3"
+                  data-slot="button"
+                >
+                  Secondary
+                </button>
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                  data-slot="button"
+                >
+                  Outline
+                </button>
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3"
+                  data-slot="button"
+                >
+                  Ghost
+                </button>
+                <button
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60 h-9 px-4 py-2 has-[>svg]:px-3"
+                  data-slot="button"
+                >
+                  Destructive
+                </button>
+              </div>
+            </div>
+            <div
+              class="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm"
+              data-slot="card"
+            >
+              <div
+                class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+                data-slot="card-header"
+              >
+                <div
+                  class="leading-none font-semibold"
+                  data-slot="card-title"
+                >
+                  Badge Variants
+                </div>
+                <div
+                  class="text-muted-foreground text-sm"
+                  data-slot="card-description"
+                >
+                  Status indicators and labels
+                </div>
+              </div>
+              <div
+                class="px-6 flex flex-wrap gap-2"
+                data-slot="card-content"
+              >
+                <span
+                  class="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90"
+                  data-slot="badge"
+                >
+                  Default
+                </span>
+                <span
+                  class="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90"
+                  data-slot="badge"
+                >
+                  Secondary
+                </span>
+                <span
+                  class="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground"
+                  data-slot="badge"
+                >
+                  Outline
+                </span>
+                <span
+                  class="inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-destructive text-white [a&]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60"
+                  data-slot="badge"
+                >
+                  Destructive
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-labelledby="radix-«r0»-trigger-progress"
+            class="flex-1 outline-none space-y-6"
+            data-orientation="horizontal"
+            data-slot="tabs-content"
+            data-state="inactive"
+            hidden=""
+            id="radix-«r0»-content-progress"
+            role="tabpanel"
+            tabindex="0"
+          />
+          <div
+            aria-labelledby="radix-«r0»-trigger-alerts"
+            class="flex-1 outline-none space-y-6"
+            data-orientation="horizontal"
+            data-slot="tabs-content"
+            data-state="inactive"
+            hidden=""
+            id="radix-«r0»-content-alerts"
+            role="tabpanel"
+            tabindex="0"
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      class="bg-muted/50 py-16"
+    >
+      <div
+        class="container mx-auto px-4"
+      >
+        <div
+          class="mb-12 text-center"
+        >
+          <h2
+            class="text-foreground mb-4 text-3xl font-bold"
+          >
+            Get Started in Minutes
+          </h2>
+          <p
+            class="text-muted-foreground text-lg"
+          >
+            Follow these simple steps to launch your project
+          </p>
+        </div>
+        <div
+          class="mx-auto max-w-2xl"
+        >
+          <div
+            class="space-y-6"
+          >
+            <div
+              class="flex items-start space-x-4"
+            >
+              <div
+                class="bg-primary text-primary-foreground flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full font-semibold"
+              >
+                1
+              </div>
+              <div>
+                <h3
+                  class="text-foreground font-semibold"
+                >
+                  Clone & Install
+                </h3>
+                <p
+                  class="text-muted-foreground"
+                >
+                  Clone the repository and install dependencies with npm, yarn, pnpm, or bun.
+                </p>
+                <code
+                  class="bg-card mt-2 block rounded p-2 text-sm"
+                >
+                  git clone https://github.com/The-Lone-Druid/nextjs-boilerplate.git
+                </code>
+              </div>
+            </div>
+            <div
+              class="bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px"
+              data-orientation="horizontal"
+              data-slot="separator"
+              role="none"
+            />
+            <div
+              class="flex items-start space-x-4"
+            >
+              <div
+                class="bg-primary text-primary-foreground flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full font-semibold"
+              >
+                2
+              </div>
+              <div>
+                <h3
+                  class="text-foreground font-semibold"
+                >
+                  Configure Environment
+                </h3>
+                <p
+                  class="text-muted-foreground"
+                >
+                  Copy .env.example to .env.local and fill in your database and Clerk credentials.
+                </p>
+                <code
+                  class="bg-card mt-2 block rounded p-2 text-sm"
+                >
+                  cp .env.example .env.local
+                </code>
+              </div>
+            </div>
+            <div
+              class="bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px"
+              data-orientation="horizontal"
+              data-slot="separator"
+              role="none"
+            />
+            <div
+              class="flex items-start space-x-4"
+            >
+              <div
+                class="bg-primary text-primary-foreground flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full font-semibold"
+              >
+                3
+              </div>
+              <div>
+                <h3
+                  class="text-foreground font-semibold"
+                >
+                  Setup Database
+                </h3>
+                <p
+                  class="text-muted-foreground"
+                >
+                  Run Prisma migrations and generate the client.
+                </p>
+                <code
+                  class="bg-card mt-2 block rounded p-2 text-sm"
+                >
+                  npx prisma migrate dev && npx prisma generate
+                </code>
+              </div>
+            </div>
+            <div
+              class="bg-border shrink-0 data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px"
+              data-orientation="horizontal"
+              data-slot="separator"
+              role="none"
+            />
+            <div
+              class="flex items-start space-x-4"
+            >
+              <div
+                class="bg-primary text-primary-foreground flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full font-semibold"
+              >
+                4
+              </div>
+              <div>
+                <h3
+                  class="text-foreground font-semibold"
+                >
+                  Start Development
+                </h3>
+                <p
+                  class="text-muted-foreground"
+                >
+                  Launch the development server and start building.
+                </p>
+                <code
+                  class="bg-card mt-2 block rounded p-2 text-sm"
+                >
+                  npm run dev
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="bg-card border-t py-8"
+    >
+      <div
+        class="container mx-auto px-4 text-center"
+      >
+        <div
+          class="mb-4 flex items-center justify-center space-x-2"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-code text-primary h-5 w-5"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m16 18 6-6-6-6"
+            />
+            <path
+              d="m8 6-6 6 6 6"
+            />
+          </svg>
+          <span
+            class="text-card-foreground font-semibold"
+          >
+            Next.js Boilerplate
+          </span>
+        </div>
+        <p
+          class="text-muted-foreground text-sm"
+        >
+          Built with ❤️ using Next.js, TypeScript, and modern web technologies
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>
+`;
