@@ -3,8 +3,12 @@ import { Main } from "@/components/common/main";
 import { ProfileDropdown } from "@/components/common/profile-dropdown";
 import { AnimatedThemeToggler } from "@/components/magicui/animated-theme-toggler";
 import { Search } from "@/components/ui/search";
+import prisma from "@/lib/prisma";
 
-export default function DashboardPage() {
+export default async function DashboardPage() {
+  const users = await prisma.user.findMany();
+
+  console.log("users", users);
   return (
     <>
       {/* ===== Top Heading ===== */}
