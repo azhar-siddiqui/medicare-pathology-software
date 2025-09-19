@@ -1,9 +1,3 @@
-type Team = {
-  name: string;
-  logo: React.ElementType;
-  plan: string;
-};
-
 type BaseNavItem = {
   title: string;
   badge?: string;
@@ -28,7 +22,6 @@ type NavGroup = {
 };
 
 type SidebarData = {
-  teams: Team[];
   navGroups: NavGroup[];
 };
 

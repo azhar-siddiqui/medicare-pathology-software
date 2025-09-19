@@ -24,6 +24,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { cn } from "@/lib/utils";
+import { useUser } from "@clerk/nextjs";
 import {
   SiClerk,
   SiCypress,
@@ -63,6 +64,8 @@ type SetupStep = {
 };
 
 export default function Home() {
+  const { user } = useUser();
+  console.log("user", user);
   const [locale, setLocale] = useState<Locale>("en");
   const dictionary = getDictionary(locale);
 
@@ -194,7 +197,7 @@ export default function Home() {
           <div className="flex items-center space-x-4">
             {/* Language Dropdown */}
             <Select value={locale} onValueChange={changeLanguage}>
-              <SelectTrigger className="w-[120px]">
+              <SelectTrigger className="w-[120px] border">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -208,16 +211,29 @@ export default function Home() {
               </SelectContent>
             </Select>
             <AnimatedThemeToggler />
-            <Link
-              href="/dashboard"
-              className={cn(
-                "group flex items-center gap-2",
-                buttonVariants({ variant: "outline" })
-              )}
-            >
-              Dashboard
-              <ArrowRight className="size-4 opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
-            </Link>
+            {user ? (
+              <Link
+                href="/dashboard"
+                className={cn(
+                  "group flex items-center gap-2",
+                  buttonVariants({ variant: "outline" })
+                )}
+              >
+                Dashboard
+                <ArrowRight className="size-4 opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+              </Link>
+            ) : (
+              <Link
+                href="/auth/sign-in"
+                className={cn(
+                  "group flex items-center gap-2",
+                  buttonVariants({ variant: "default" })
+                )}
+              >
+                Login
+                <ArrowRight className="size-4 opacity-0 -translate-x-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+              </Link>
+            )}
           </div>
         </div>
       </header>

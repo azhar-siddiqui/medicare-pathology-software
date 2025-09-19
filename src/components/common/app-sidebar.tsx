@@ -11,15 +11,15 @@ import {
 
 import { sidebarData } from "@/data/sidebar-data";
 
+import { LabBranding } from "./lab-branding";
 import { NavGroup } from "./nav-group";
 import { NavUser } from "./nav-user";
-import { TeamSwitcher } from "./team-switcher";
 
 export function AppSidebar() {
   return (
     <Sidebar collapsible="icon">
       <SidebarHeader>
-        <TeamSwitcher teams={sidebarData.teams} />
+        <LabBranding />
 
         {/* Replace <TeamSwitch /> with the following <AppTitle />
          /* if you want to use the normal app title instead of TeamSwitch dropdown */}

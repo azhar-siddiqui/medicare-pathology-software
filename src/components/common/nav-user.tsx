@@ -14,7 +14,7 @@ import {
   SidebarMenuItem,
   useSidebar,
 } from "@/components/ui/sidebar";
-import { useUser } from "@clerk/nextjs";
+import { SignOutButton, useUser } from "@clerk/nextjs";
 import {
   BadgeCheck,
   Bell,
@@ -73,6 +73,7 @@ export function NavUser() {
                 <div className="grid flex-1 text-start text-sm leading-tight">
                   <span className="truncate font-semibold">
                     {user?.firstName?.slice(0, 1).toUpperCase()}
+                    {user?.lastName?.slice(0, 1).toUpperCase()}
                   </span>
                   <span className="truncate text-xs">
                     {user?.emailAddresses[0].emailAddress}
@@ -111,7 +112,7 @@ export function NavUser() {
             <DropdownMenuSeparator />
             <DropdownMenuItem>
               <LogOut />
-              Sign out
+              <SignOutButton redirectUrl="/auth/sign-in"/>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
