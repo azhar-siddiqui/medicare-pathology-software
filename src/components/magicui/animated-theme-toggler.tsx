@@ -75,7 +75,7 @@ export const AnimatedThemeToggler = ({ className }: props) => {
     <Button
       ref={buttonRef}
       onClick={changeTheme}
-      className={cn(className)}
+      className={cn('rounded-full border-0 bg-muted',className)}
       aria-label="Toggle theme"
       variant="outline"
       size="icon"

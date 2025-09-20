@@ -12,11 +12,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { SignOutButton } from "@clerk/nextjs";
 import { currentUser } from "@clerk/nextjs/server";
-
 import Link from "next/link";
 
 export async function ProfileDropdown() {
   const user = await currentUser();
+
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
@@ -62,10 +62,12 @@ export async function ProfileDropdown() {
           <DropdownMenuItem>New Team</DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          <SignOutButton redirectUrl="/auth/sign-in" />
-          <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
-        </DropdownMenuItem>
+        <SignOutButton signOutOptions={{ redirectUrl: "/auth/sign-in" }}>
+          <DropdownMenuItem>
+            Sign Out
+            <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+          </DropdownMenuItem>
+        </SignOutButton>
       </DropdownMenuContent>
     </DropdownMenu>
   );
