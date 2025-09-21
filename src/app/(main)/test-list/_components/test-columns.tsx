@@ -17,6 +17,7 @@ export const testColumns: ColumnDef<TestData>[] = [
       </div>
     ),
     meta: { width: "200px" },
+    enableSorting: true,
   },
   {
     id: "testCode",
