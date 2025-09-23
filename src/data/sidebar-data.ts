@@ -85,8 +85,8 @@ export const sidebarData: SidebarData = {
           icon: TestTube,
           items: [
             {
-              title: "Add New Test",
-              url: "/add-new-test",
+              title: "Add New Test Group",
+              url: "/add-new-test-group",
               icon: FunnelPlus,
             },
             {

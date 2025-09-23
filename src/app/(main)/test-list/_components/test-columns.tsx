@@ -1,8 +1,9 @@
 "use client";
 
+import { DataTableColumnHeader } from "@/components/data-table/column-header";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Input } from "@/components/ui/input";
+import { formatCurrency } from "@/lib/utils";
 import { ColumnDef } from "@tanstack/react-table";
 import { TestData } from "./data";
 
@@ -10,7 +11,9 @@ export const testColumns: ColumnDef<TestData>[] = [
   {
     id: "test",
     accessorKey: "test",
-    header: () => "Tests",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Tests" />
+    ),
     cell: ({ row }) => (
       <div className="p-1 text-left text-sm capitalize">
         {row.original.test}
@@ -22,7 +25,9 @@ export const testColumns: ColumnDef<TestData>[] = [
   {
     id: "testCode",
     accessorKey: "testCode",
-    header: () => "Test Code",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Test Code" />
+    ),
     cell: ({ row }) => (
       <div className="p-1 text-left text-sm capitalize">
         {row.original.testCode}
@@ -32,7 +37,9 @@ export const testColumns: ColumnDef<TestData>[] = [
   {
     id: "department",
     accessorKey: "department",
-    header: () => "Department",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Department" />
+    ),
     cell: ({ row }) => (
       <div className="p-1 text-left text-sm capitalize">
         {row.original.department}
@@ -42,7 +49,9 @@ export const testColumns: ColumnDef<TestData>[] = [
   {
     id: "sampleType",
     accessorKey: "sampleType",
-    header: () => "Sample Type",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Sample Type" />
+    ),
     cell: ({ row }) => (
       <div className="p-1 text-left text-sm capitalize">
         {row.original.sampleType ?? "-"}
@@ -52,15 +61,21 @@ export const testColumns: ColumnDef<TestData>[] = [
   {
     id: "price",
     accessorKey: "price",
-    header: () => "Price",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Price" />
+    ),
     cell: ({ row }) => (
-      <Input value={row.original.price} onChange={() => {}} className="w-28" />
+      <div className="p-1 text-left text-sm capitalize">
+        {formatCurrency(row.original.price, "INR")}
+      </div>
     ),
   },
   {
     id: "interPretation",
     accessorKey: "interPretation",
-    header: () => "Interpretation",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Interpretation" />
+    ),
     cell: ({ row }) => (
       <Checkbox
         id={`interPretation${row.original.id}`}

@@ -1,4 +1,5 @@
 import { ThemeProvider } from "@/components/providers/theme-provider";
+import { Toaster } from "@/components/ui/sonner";
 import { ClerkProvider } from "@clerk/nextjs";
 import { shadcn } from "@clerk/themes";
 import type { Metadata } from "next";
@@ -45,6 +46,13 @@ export default function RootLayout({
             disableTransitionOnChange
           >
             {children}
+            <Toaster
+              duration={3000}
+              visibleToasts={1}
+              position="bottom-right"
+              richColors
+              closeButton
+            />
           </ThemeProvider>
         </ClerkProvider>
       </body>
