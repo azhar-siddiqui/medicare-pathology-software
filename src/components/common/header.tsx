@@ -35,7 +35,7 @@ export default function Header({
     <header
       className={cn(
         "z-50 h-16",
-        fixed && "header-fixed peer/header sticky top-0 w-[inherit]",
+        fixed && "header-fixed peer/header sticky top-0 w-[inherit] z-[10000px]",
         offset > 10 && fixed ? "shadow" : "shadow-none",
         className
       )}

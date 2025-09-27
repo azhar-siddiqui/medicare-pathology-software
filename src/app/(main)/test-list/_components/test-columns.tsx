@@ -10,17 +10,16 @@ import { TestData } from "./data";
 export const testColumns: ColumnDef<TestData>[] = [
   {
     id: "test",
-    accessorKey: "test",
+    accessorKey: "testGroupName",
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Tests" />
     ),
     cell: ({ row }) => (
       <div className="p-1 text-left text-sm capitalize">
-        {row.original.test}
+        {row.original.testGroupName}
       </div>
     ),
     meta: { width: "200px" },
-    enableSorting: true,
   },
   {
     id: "testCode",
@@ -42,7 +41,7 @@ export const testColumns: ColumnDef<TestData>[] = [
     ),
     cell: ({ row }) => (
       <div className="p-1 text-left text-sm capitalize">
-        {row.original.department}
+        {row.original.department.department}
       </div>
     ),
   },
@@ -71,24 +70,27 @@ export const testColumns: ColumnDef<TestData>[] = [
     ),
   },
   {
-    id: "interPretation",
-    accessorKey: "interPretation",
+    id: "showInterpretation",
+    accessorKey: "showInterpretation",
     header: ({ column }) => (
       <DataTableColumnHeader column={column} title="Interpretation" />
     ),
     cell: ({ row }) => (
-      <Checkbox
-        id={`interPretation${row.original.id}`}
-        checked={row.original.interPretation}
-        onCheckedChange={() => {}}
-      />
+      <div className="text-center">
+        <Checkbox
+          id={`interPretation${row.original.id}`}
+          checked={row.original.showInterpretation}
+          onCheckedChange={() => {}}
+        />
+      </div>
     ),
+    enableSorting: false,
   },
   {
     id: "action",
     accessorKey: "action",
-    header: () => "Action",
-    cell: ({ row }) => (
+    header: () => <p className="text-center">Action</p>,
+    cell: () => (
       <div className="p-1 flex gap-x-4">
         <Button>Edit</Button>
         <Button variant="destructive">Delete</Button>

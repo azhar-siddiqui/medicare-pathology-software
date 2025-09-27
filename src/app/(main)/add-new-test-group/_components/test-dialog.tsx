@@ -1,5 +1,5 @@
 "use client";
-import TestDepartmentDialog from "./test-depart-dialog";
+import TestDepartmentDialog from "./test-department-dialog";
 import { useTest } from "./test-provider";
 
 export default function TestDialog() {

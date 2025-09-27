@@ -19,7 +19,11 @@
     "e2e": "cypress open --e2e",
     "e2e:headless": "cypress run --e2e",
     "component": "cypress open --component",
-    "component:headless": "cypress run --component"
+    "component:headless": "cypress run --component",
+    "seed": "ts-node prisma/seed.ts"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.31.10",

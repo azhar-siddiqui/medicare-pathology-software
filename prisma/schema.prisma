@@ -26,17 +26,40 @@ model User {
   departmentId        String?
   createdAt           DateTime    @default(now())
   updatedAt           DateTime    @updatedAt
+  TestGroup           TestGroup?  @relation(fields: [testGroupId], references: [id])
+  testGroupId         String?
 
   @@map("users")
 }
 
 model Department {
-  id          String   @id @default(cuid())
-  clerkUserId String   
-  department  String   @db.VarChar(191)
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id          String      @id @default(cuid())
+  clerkUserId String?
+  department  String      @db.VarChar(191)
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
   users       User[]
+  TestGroup   TestGroup[]
 
   @@map("departments")
+}
+
+model TestGroup {
+  id                 String     @id @default(uuid())
+  clerkUserId        String
+  testGroupName      String     @db.VarChar(255)
+  testCode           String?    @db.VarChar(50)
+  departmentId       String
+  department         Department @relation(fields: [departmentId], references: [id], onDelete: Restrict)
+  sampleType         String     @db.VarChar(100)
+  price              Decimal    @db.Decimal(10, 2)
+  interpretation     String?    @db.Text
+  showInterpretation Boolean    @default(false)
+  createdAt          DateTime   @default(now())
+  updatedAt          DateTime   @updatedAt
+  users              User[]
+
+  @@index([testGroupName])
+  @@index([testCode])
+  @@map("test_groups")
 }

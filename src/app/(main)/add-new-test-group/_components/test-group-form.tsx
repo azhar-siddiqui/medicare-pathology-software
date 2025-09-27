@@ -1,5 +1,6 @@
 "use client";
 
+import { creatTestGroupActions } from "@/actions/test-group/create.action";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -10,6 +11,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   Select,
   SelectContent,
@@ -19,32 +21,18 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
+import { testGroupFormSchema } from "@/validation/test-department-schema";
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Save } from "lucide-react";
-import { HTMLAttributes } from "react";
+import { HTMLAttributes, useTransition } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 import z from "zod";
-
-export const testGroupFormSchema = z.object({
-  testGroupName: z.string().min(1, { message: "Group Name required" }),
-  testCode: z.string(),
-  department: z.string().min(2, { message: "Test Department Required" }),
-  sampleType: z.string().min(2, { message: "Sample Type Required" }),
-  price: z
-    .number({
-      message: "Price Required",
-    })
-    .min(0, { message: "Price cannot be negative" }),
-  interpretation: z.string(),
-});
 
 interface Department {
   department: string;
   id: string;
-  clerkUserId: string;
-  createdAt: Date;
-  updatedAt: Date;
 }
 
 type TestGroupFormProps = HTMLAttributes<HTMLFormElement> & {
@@ -55,20 +43,30 @@ export default function TestGroupForm({
   department,
   ...props
 }: Readonly<TestGroupFormProps>) {
+  const [isPending, startTransition] = useTransition();
+
   const form = useForm<z.infer<typeof testGroupFormSchema>>({
     resolver: zodResolver(testGroupFormSchema),
     defaultValues: {
       testGroupName: "",
       testCode: "",
-      department: "",
+      departmentId: "",
       sampleType: "",
       price: undefined,
       interpretation: "",
     },
   });
 
-  function onSubmit(value: z.infer<typeof testGroupFormSchema>) {
-    console.log(value);
+  async function onSubmit(values: z.infer<typeof testGroupFormSchema>) {
+    const data = await creatTestGroupActions(values);
+    startTransition(() => {
+      if (!data.success) {
+        toast.error(data.message);
+      } else {
+        toast.success(data.message);
+        form.reset();
+      }
+    });
   }
 
   return (
@@ -83,7 +81,7 @@ export default function TestGroupForm({
             control={form.control}
             name="testGroupName"
             render={({ field }) => (
-              <FormItem className="col-span-3 lg:col-span-1">
+              <FormItem className="col-span-3 lg:col-span-2">
                 <FormLabel>Test Group Name</FormLabel>
                 <FormControl>
                   <Input
@@ -117,45 +115,48 @@ export default function TestGroupForm({
 
           <FormField
             control={form.control}
-            name="department"
+            name="departmentId"
             render={({ field }) => (
               <FormItem className="col-span-3 lg:col-span-1">
                 <FormLabel>Test Group Department</FormLabel>
                 <Select
                   onValueChange={field.onChange}
                   defaultValue={field.value}
+                  key={field.value}
                 >
                   <FormControl>
                     <SelectTrigger
                       className={cn(
                         "w-full",
-                        form.formState.errors.testGroupName &&
+                        form.formState.errors.departmentId &&
                           "data-[placeholder]:text-destructive"
                       )}
                     >
                       <SelectValue
                         placeholder={
-                          form.formState.errors.department?.message ??
+                          form.formState.errors.departmentId?.message ??
                           "Select Department"
                         }
                       />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>
-                    {department && department.length > 0 ? (
-                      department.map((departmentItem) => (
-                        <SelectItem
-                          key={departmentItem.id}
-                          value={departmentItem.department}
-                        >
-                          {departmentItem.department}
+                    <ScrollArea className="h-48 rounded-md">
+                      {department && department.length > 0 ? (
+                        department.map((departmentItem) => (
+                          <SelectItem
+                            key={departmentItem.id}
+                            value={departmentItem.id}
+                          >
+                            {departmentItem.department}
+                          </SelectItem>
+                        ))
+                      ) : (
+                        <SelectItem value="No Department found" disabled>
+                          No Department found
                         </SelectItem>
-                      ))
-                    ) : (
-                      <SelectItem value="No Department found" disabled>
-                        No Department found
-                      </SelectItem>
-                    )}
+                      )}
+                    </ScrollArea>
                   </SelectContent>
                 </Select>
               </FormItem>
@@ -193,7 +194,7 @@ export default function TestGroupForm({
                   <Input
                     type="number"
                     placeholder={
-                      form.formState.errors.price?.message ?? "Enter Age"
+                      form.formState.errors.price?.message ?? "Enter Price"
                     }
                     {...field}
                     value={field.value ?? ""}
@@ -203,7 +204,6 @@ export default function TestGroupForm({
                       )
                     }
                     min="0"
-                    max="150"
                     autoComplete="off"
                     className={cn(
                       "[appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none",
@@ -234,7 +234,7 @@ export default function TestGroupForm({
             )}
           />
         </div>
-        <Button type="submit" className="w-full" disabled={false}>
+        <Button type="submit" className="w-full" disabled={isPending}>
           <Save className="size-4" />
           Save
         </Button>

@@ -30,12 +30,13 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { useTableUrlState } from "@/hooks/use-table-url-state";
+
 import { ChevronDown, Search } from "lucide-react";
 import { TestData } from "./data";
 
 interface DataTableProps<TValue> {
   columns: ColumnDef<TestData, TValue>[];
-  data: TestData[];
+  data: TestData[] | undefined;
   isLoading?: boolean;
 }
 
@@ -71,7 +72,7 @@ export default function TestListTable<TValue>({
   const paginatedData = React.useMemo(() => {
     const start = pagination.pageIndex * pagination.pageSize;
     const end = start + pagination.pageSize;
-    return data.slice(start, end);
+    return data?.slice(start, end) ?? [];
   }, [data, pagination.pageIndex, pagination.pageSize]);
 
   const table = useReactTable({
@@ -81,7 +82,7 @@ export default function TestListTable<TValue>({
     onColumnFiltersChange,
     onGlobalFilterChange,
     globalFilterFn: (row, _columnId, filterValue: string) => {
-      const test = row.original.test?.toLowerCase() || "";
+      const test = row.original?.testGroupName?.toLowerCase() || "";
       const testCode = row.original.testCode?.toLowerCase() || "";
       const searchTerm = filterValue.toLowerCase();
       return test.includes(searchTerm) || testCode.includes(searchTerm);
@@ -102,7 +103,7 @@ export default function TestListTable<TValue>({
       pagination,
     },
     manualPagination: true,
-    pageCount: Math.ceil(data.length / pagination.pageSize),
+    pageCount: Math.ceil((data?.length ?? 0) / pagination.pageSize),
   });
 
   // Ensure the current page is within range when data or pageSize changes
@@ -184,7 +185,7 @@ export default function TestListTable<TValue>({
                   <TableRow>
                     <TableCell
                       colSpan={columns.length}
-                      className="h-24 text-center"
+                      className="h-[52vh] text-center"
                     >
                       {isLoading ? "Loading..." : "No results."}
                     </TableCell>

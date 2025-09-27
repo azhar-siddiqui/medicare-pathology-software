@@ -4,7 +4,7 @@ import { Prisma } from "@/generated/prisma";
 import prisma from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
 
-export async function getDepartmentActions() {
+export async function getTestGroupActions() {
   const { userId } = await auth();
 
   if (!userId) {
@@ -16,19 +16,37 @@ export async function getDepartmentActions() {
   }
 
   try {
-    const deparment = await prisma.department.findMany({
-      where: { clerkUserId: userId },
+    const testGroup = await prisma.testGroup.findMany({
+      where: {
+        AND: { clerkUserId: userId },
+      },
       select: {
         id: true,
-        department: true,
+        testGroupName: true,
+        testCode: true,
+        department: {
+          select: {
+            id: true,
+            department: true,
+          },
+        },
+        sampleType: true,
+        price: true,
+        showInterpretation: true,
       },
     });
+
+    // Convert Decimal price to string for serialization
+    const serializedTestGroup = testGroup.map((group) => ({
+      ...group,
+      price: group.price.toFixed(2), // Convert Decimal to string with 2 decimal places
+    }));
 
     return {
       success: true,
       status: "success",
-      message: "Department retrieved successfully",
-      data: deparment,
+      message: "Test retrieved successfully",
+      data: serializedTestGroup,
     };
   } catch (error) {
     if (error instanceof Prisma.PrismaClientKnownRequestError) {
